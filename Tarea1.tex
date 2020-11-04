@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath} 
+\usepackage{amssymb}
 
 \title{Tarea1 ED}
 \author{Arrieta Mancera Luis Sebastian\\ Pintor Muñoz Pedro Joshue\\ Gómez Rodriguez José Antonio }
@@ -9,17 +11,92 @@
 
 \maketitle
 
-\section{Ejercicio 1}
-\section{Ejercicio 2}
-\section{Ejercicio 3}
-\section{Ejercicio 4}
-\section{Ejercicio 5}
-\section{Ejercicio 6}
-\section{Ejercicio 7}
-\section{Ejercicio 8}
-\section{Ejercicio 9}
-\section{Ejercicio 10}
-\section{Ejercicio 11}
+\textbf{\Large Pregunta 1}\\
+\textbf{\Large Pregunta 2}\\
+\textbf{\Large Pregunta 3}\\
+\textbf{\Large Pregunta 4}\\
+
+ \textbf{Traduce formalmente a la lógica de proposiciones los siguientes enunciados. Indica el valor de cada variable atómica}.\\
+    
+a) Seras feliz solo si buscas el placer y no te dejas esclavizar por los deseos.
+\begin{align*}
+    &s=\text{serás feliz }\\
+    &p=\text{buscas el placer}\\
+    &e=\text{te dejas esclavizar por los deseos}
+\end{align*}
+
+b) Maŕıa fue al teatro el lunes en la noches solo en el caso de que no tuviera clase el martes temprano.
+
+\begin{align*}
+    &m=\text{María fue al teatro}\\
+    &e=\text{tuviera clases el martes temprano}
+\end{align*}
+
+c) Si x es mayor que 3 entonces tambíen es mayor que y\\
+\begin{align*}
+    &x=\text{x mayor que 3}\\
+    &y=\text{x mayor que y}
+\end{align*}
+
+d)Si los tres lados de un triangulo son congruentes, entonces los tres  ́angulos del triangulo son congruentes
+\begin{align*}
+    &t=\text{los tres lados de un triángulo son congruentes}\\
+    &a=\text{los tres ángulos de un tríangulo son congruentes}
+\end{align*}
+
+\textbf{\Large Pregunta 5}\\
+\textbf{Formaliza los siguientes argumentos lógicos. Indica el valor de cada variable atómica utilizada.}\\
+
+a)Que un animal tenga espina dorsal es condición necesaria para que sea un animal vertebrado. Por otro
+lado, si el animal tiene encéfalo y médula espinal, entonces tiene que ser vertebrado. Sabemos también,
+que si un animal es vertebrado, entonces tiene cráneo. Por lo tanto podemos decir que todos los animales
+que tiene cráneo, entonces tienen médula espinal.\\
+\begin{align*}
+    &d=\text{un animal tenga espina dorsal}\\
+    &a=\text{sea un animal vertebrádo}\\
+    &e=\text{el animal tiene encéfalo}\\
+    &m=\text{el animal tiene médula espinal}\\
+    &c=\text{el animal tiene cráneo}\\
+\end{align*}
+\begin{align*}
+    &(a \rightarrow d)\land (e\land m \rightarrow a)\\
+    &a\rightarrow c\\
+    &\rule{30mm}{0.1mm}\\
+    &\therefore c\rightarrow m\\
+\end{align*}
+b)Todo numero entero o es primo o es compuesto. Si es compuesto, es un producto de factores primos y si
+es un producto de factores primos, entonces es divisible por ellos. Pero si un numero entero es primo, no
+es compuesto, aunque es divisible por si mismos y por la unidad y consiguientemente, también divisible
+por números primos. Por lo tanto, todo número entero es divisible por números primos.\\
+\begin{align*}
+    &e=\text{todo número entero}\\
+    &p=\text{es primo}\\
+    &c=\text{es compuesto}\\
+    &f=\text{es un producto de factores primos}\\
+    &d=\text{es divisible por factores primos}\\
+    &d'=\text{es divisible por si mismo}\\
+    &d''=\text{es divisible por la unidad}\\
+\end{align*}
+\begin{align*}
+    &e\rightarrow p \lor c\\
+    &(c\rightarrow f)\land (f\rightarrow d)\\
+    &(e\rightarrow p)\rightarrow \neg c\\
+    &d'\land d'' \land d\\
+    &\rule{30mm}{0.1mm}\\
+    &\therefore e\rightarrow d
+\end{align*}
+
+
+
+\textbf{\Large Pregunta 6}\\
+\textbf{\Large Pregunta 7}\\
+\textbf{\Large Pregunta 8}\\
+\textbf{\Large Pregunta 9}\\
+\textbf{\Large Pregunta 10}\\
+\textbf{\Large Pregunta 11}\\
+
+
+
 
 
 \end{document}
